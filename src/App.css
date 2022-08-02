@@ -1,0 +1,169 @@
+:root {
+	--PRIMARY_BLUE: #0072ce;
+	--MEDIUM_BLUE: #0098ff;
+	--LIGHT_BLUE: #00bbff;
+}
+
+@media (max-width: 1000px) {
+	.Card-container {
+		flex-direction: column;
+		min-height: 72em;
+		justify-content: center;
+		align-items: center;
+		margin: 50px;
+	}
+	.Card {
+		min-width: 90%;
+	}
+	.Form-container {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+	}
+}
+
+.Main-container {
+	background: linear-gradient(var(--LIGHT_BLUE), var(--MEDIUM_BLUE));
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.Column {
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+}
+
+.Input:focus {
+	outline: 1px var(--PRIMARY_BLUE) solid;
+}
+
+.Input {
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	border-radius: 5px;
+	height: 30px;
+	width: 100%;
+}
+
+.Input-wrong {
+	border: 1px solid rgba(255, 0, 0, 0.4);
+}
+.Input-wrong:focus {
+	outline: 1px rgba(255, 0, 0, 0.8) solid;
+}
+
+.Input-wrong-text {
+	color: rgba(255, 0, 0, 1);
+	font-weight: 500;
+	font-size: smaller;
+}
+
+.Label {
+	color: rgba(0, 0, 0, 0.6);
+	font-weight: 500;
+	font-size: large;
+}
+
+.Checkbox-container {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: flex-end;
+	gap: 15px;
+}
+
+.Checkbox {
+	width: 20px;
+	height: 20px;
+	margin-left: -1px;
+}
+
+.Form-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.Form-gap {
+	column-gap: 20%;
+}
+
+.Card-container {
+	display: flex;
+	direction: row;
+	overflow: hidden;
+	height: 36em;
+	max-width: 60em;
+	border-radius: 15px;
+	box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
+		0 8px 10px -6px rgb(0 0 0 / 0.1);
+}
+
+.Card-gap {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.Card {
+	display: flex;
+	flex-direction: column;
+	padding: 40px;
+	width: 50%;
+	height: 100%;
+	background: white;
+}
+
+.Title {
+	font-size: xx-large;
+	color: white;
+}
+
+.Blue {
+	color: var(--PRIMARY_BLUE);
+}
+
+.Blue-gradient {
+	background: linear-gradient(
+		90deg,
+		var(--PRIMARY_BLUE),
+		var(--MEDIUM_BLUE),
+		var(--PRIMARY_BLUE)
+	);
+}
+
+.Paragraph {
+	color: white;
+}
+
+.Button:hover {
+	transform: scale(1.05);
+}
+
+.Button {
+	transition: all 0.1s ease-in-out;
+	background-color: white;
+	width: min-content;
+	height: min-content;
+	margin-top: 10px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 30px;
+	padding-right: 30px;
+	border: none;
+	border-radius: 5px 0 5px 0;
+	white-space: nowrap;
+	color: black;
+	font-size: medium;
+	font-weight: 600;
+}
+
+.Text-white {
+	color: white;
+}
+
+.Bold {
+	font-weight: 500;
+}

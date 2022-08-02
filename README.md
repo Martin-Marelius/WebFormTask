@@ -1,6 +1,6 @@
 ## Prerequisites 
 
-This project was made using `npx create-react-app`\
+This project was made using `npx create-react-app`
 
 `npm install`                   for node_modules\
 `npm install --save-dev jest`   for the jest testing framework
